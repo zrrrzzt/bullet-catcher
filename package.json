@@ -1,0 +1,40 @@
+{
+  "name": "bullet-catcher",
+  "version": "1.0.0",
+  "description": "Restrict put on gun server",
+  "main": "index.js",
+  "browser": "browser.js",
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zrrrzzt/bullet-catcher.git"
+  },
+  "keywords": [],
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zrrrzzt/bullet-catcher/issues"
+  },
+  "homepage": "https://github.com/zrrrzzt/bullet-catcher#readme",
+  "devDependencies": {
+    "ava": "0.24.0",
+    "coveralls": "3.0.0",
+    "gun": "0.9.9",
+    "nsp": "3.1.0",
+    "nyc": "11.4.1",
+    "standard": "10.0.3"
+  },
+  "peerDependencies": {
+    "gun": "0.9.9"
+  },
+  "dependencies": {
+    "is-fn": "1.0.0"
+  }
+}
