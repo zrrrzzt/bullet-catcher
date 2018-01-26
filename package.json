@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/zrrrzzt/bullet-catcher#readme",
   "devDependencies": {
-    "ava": "0.24.0",
+    "ava": "0.25.0",
     "coveralls": "3.0.0",
     "gun": "0.9.9",
     "nsp": "3.1.0",
