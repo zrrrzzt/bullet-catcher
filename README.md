@@ -78,3 +78,5 @@ Gun.on('opt', function (ctx) {
 
 ## License
 [MIT](LICENSE)
+
+![Robohash image of bullet-catcher](https://robots.kebabstudios.party/bullet-catcher.png "Robohash image of bullet-catcher")
