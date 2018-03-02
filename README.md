@@ -74,9 +74,11 @@ Gun.on('opt', function (ctx) {
 ```
 
 ## Related
+
 - [gun-restrict-examples](https://github.com/zrrrzzt/gun-restrict-examples)
 
 ## License
+
 [MIT](LICENSE)
 
 ![Robohash image of bullet-catcher](https://robots.kebabstudios.party/bullet-catcher.png "Robohash image of bullet-catcher")

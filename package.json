@@ -32,9 +32,10 @@
     "standard": "11.0.0"
   },
   "peerDependencies": {
-    "gun": "0.9.95"
+    "gun": "0.9.96"
   },
   "dependencies": {
+    "ajv": "6.2.0",
     "is-fn": "1.0.0"
   }
 }
