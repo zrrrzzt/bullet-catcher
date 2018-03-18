@@ -1,6 +1,6 @@
 {
   "name": "bullet-catcher",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Restrict put on gun server",
   "main": "index.js",
   "browser": "browser.js",
