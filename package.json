@@ -26,7 +26,7 @@
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.0",
-    "gun": "0.9.98",
+    "gun": "0.9.99",
     "nsp": "3.2.1",
     "nyc": "11.6.0",
     "standard": "11.0.1"
