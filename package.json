@@ -32,7 +32,7 @@
     "standard": "11.0.1"
   },
   "peerDependencies": {
-    "gun": "0.9.99"
+    "gun": "0.9.991"
   },
   "dependencies": {
     "is-fn": "1.0.0"
