@@ -23,6 +23,9 @@
     "url": "https://github.com/zrrrzzt/bullet-catcher/issues"
   },
   "homepage": "https://github.com/zrrrzzt/bullet-catcher#readme",
+  "engines": {
+    "node": ">=8.11.1"
+  },
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.1",
