@@ -31,7 +31,7 @@
     "coveralls": "3.0.1",
     "gun": "0.9.997",
     "nsp": "3.2.1",
-    "nyc": "12.0.1",
+    "nyc": "12.0.2",
     "standard": "11.0.1"
   },
   "peerDependencies": {
