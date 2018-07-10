@@ -29,13 +29,13 @@
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.2",
-    "gun": "0.9.9993",
+    "gun": "0.9.9994",
     "nsp": "3.2.1",
     "nyc": "12.0.2",
     "standard": "11.0.1"
   },
   "peerDependencies": {
-    "gun": "0.9.9993"
+    "gun": "0.9.9994"
   },
   "dependencies": {
     "is-fn": "1.0.0"
