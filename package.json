@@ -30,7 +30,7 @@
     "coveralls": "3.0.2",
     "gun": "0.9.9998",
     "nyc": "13.0.1",
-    "standard": "11.0.1"
+    "standard": "12.0.0"
   },
   "peerDependencies": {
     "gun": "0.9.9998"
