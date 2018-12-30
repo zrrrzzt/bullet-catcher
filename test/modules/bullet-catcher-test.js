@@ -9,7 +9,7 @@ test('It requires isValid to be supplied', t => {
   t.is(error.message, 'you must pass in an isValid function')
 })
 
-test('It requires isValid to be a function', t => {
+test('It requires isValid to be a function and not a string', t => {
   const error = t.throws(() => {
     const options = {
       isValid: 'nope'
