@@ -12,12 +12,12 @@ This module will listen to ```in``` and run your supplied validation function ag
 Install `bullet-proof-gundb` from npm
 
 ```bash
-$ npm i bullet-proof-gundb
+ npm i bullet-proof-gundb
 ```
 
 ### bullet-proof-gundb
 
-Require `bullet-proof-gundb` in your gun server. This is also performed by bullet-catcher:
+Require `bullet-proof-gundb` in your gun server. This is also performed by bullet-catcher. You should use `bullet-catcher` if this is all you need since it is lighter weight:
 
 ```JavaScript
 const Gun = require('gun')
@@ -86,6 +86,8 @@ const gun = Gun({
 ### bullet-proof
 
 Bullet-proof-gundb is heavier but has other options.
+
+
 
 
 
