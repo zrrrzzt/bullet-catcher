@@ -9,14 +9,16 @@ Gun.on('opt', function (context) {
   // Pass to subsequent opt handlers
   this.to.next(context)
 
-  const { isValid } = context.opt
-
-  if (!isValid) {
-    throw new Error('you must pass in an isValid function')
+  var { isValid } = context.opt;
+  var { isValidGet } = context.opt
+  var { isValidPut } = context.opt
+  isValidPut = isValid || isValidPut;
+  if (!isValidGet && !isValidPut) {
+    throw new Error('you must pass in an isValidPut or isValidGet function')
   }
 
-  if (!isFn(isValid)) {
-    throw new Error('isValid must be a function')
+  if ((!isFn(isValidGet)&&isValidGet)&&(!isFn(isValidPut)&&isValidPut)) {
+    throw new Error('isValidPut or isValidGet must be a function')
   }
 
   // Check all incoming traffic
@@ -24,9 +26,13 @@ Gun.on('opt', function (context) {
     var to = this.to
     // restrict put
     if (msg.put) {
-      if (isValid(msg)) {
+      if (isValidPut(msg)) {
         to.next(msg)
       }
+    } else if(msg.get){
+       if(isValidGet(msg){
+	  to.next(msg);
+	}
     } else {
       to.next(msg)
     }

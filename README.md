@@ -41,7 +41,7 @@ const server = require('http').createServer((req, res) => {
   }).pipe(res)
 })
 
-// Pass the validation function as isValid
+// Pass the PUT validation function as isValid or isValidPut
 const gun = Gun({
   file: 'data.json',
   web: server,
@@ -72,6 +72,17 @@ Gun.on('opt', function (ctx) {
 })
 ```
 
+To reduce VPS bandwidth costs, you can also restrict gets in the same way. Just specify each in the isValidPut and isValidGet functions.
+```
+const gun = Gun({
+  file: 'data.json',
+  web: server,
+  isValidPut: hasValidToken,
+  isValidGet: hasValidToken
+})
+
+
+```
 ## Related
 
 - [gun-restrict-examples](https://github.com/zrrrzzt/gun-restrict-examples)
