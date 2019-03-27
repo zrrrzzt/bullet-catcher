@@ -20,11 +20,11 @@ Gun.on('opt', function (context) {
   if ((isValidGet && !isFn(isValidGet)||(isValidPut && !isFn(isValidPut))) {
     throw new Error('isValidGet or isValidPut must be a function')
   }
-
   // Check all incoming traffic
   context.on('in', function (msg) {
     var to = this.to
     // restrict put
+	console.log("Received this message",msg);
     if (msg.put) {
       if (isValidPut(msg)) {
         to.next(msg);
