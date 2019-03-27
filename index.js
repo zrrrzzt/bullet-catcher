@@ -17,7 +17,7 @@ Gun.on('opt', function (context) {
     throw new Error('you must pass in an isValidPut or isValidGet function')
   }
 
-  if ((!isFn(isValidGet)&&isValidGet)&&(!isFn(isValidPut)&&isValidPut)) {
+  if ((!isFn(isValidGet)&&isValidGet)||(!isFn(isValidPut)&&isValidPut)) {
     throw new Error('isValidPut or isValidGet must be a function')
   }
 
