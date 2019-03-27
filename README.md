@@ -3,9 +3,9 @@
 
 # bullet-catcher
 
-Restrict put on a [gun](https://github.com/amark/gun) server
+Restrict put and get on a [gun](https://github.com/amark/gun) server
 
-This module will listen to ```in``` and run your supplied validation function against all `put` messages.
+This module will listen to ```in``` and run your supplied validation function against all `put` messages. This module also should work in the browser.
 
 ## Usage
 
