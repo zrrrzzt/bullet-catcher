@@ -25,12 +25,13 @@ Gun.on('opt', function (context) {
   context.on('in', function (msg) {
     var to = this.to
     // restrict put
+	console.log("Received this message",msg);
     if (msg.put) {
       if (isValidPut(msg)) {
         to.next(msg)
       }
     } else if(msg.get){
-       if(isValidGet(msg){
+       if(isValidGet(msg)){
 	  to.next(msg);
 	}
     } else {
