@@ -1,26 +1,28 @@
 [![Build Status](https://travis-ci.org/zrrrzzt/bullet-catcher.svg?branch=master)](https://travis-ci.org/zrrrzzt/bullet-catcher)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-# bullet-catcher
+# bullet-proof-gundb
 
-Restrict put and get on a [gun](https://github.com/amark/gun) server
+Restrict put and get on a [gun](https://github.com/amark/gun) server. Use JSON validation on input keys, proof-of-work, or any other custom function on a per-key bases. If you only need the custom function, try using `bullet-catcher`: https://github.com/zrrrzzt/bullet-catcher. 
 
-This module will listen to ```in``` and run your supplied validation function against all `put` messages. This module also should work in the browser.
+This module will listen to ```in``` and run your supplied validation function against all `put` and `get` messages. This module should also work in the browser. 
 
 ## Usage
 
-Install `bullet-catcher` from npm
+Install `bullet-proof-gundb` from npm
 
 ```bash
-$ npm i bullet-catcher
+$ npm i bullet-proof-gundb
 ```
 
-Require `bullet-catcher` in your gun server
+### bullet-proof-gundb
+
+Require `bullet-proof-gundb` in your gun server. This is also performed by bullet-catcher:
 
 ```JavaScript
 const Gun = require('gun')
 // MUST be required after Gun to work
-require('bullet-catcher')
+require('bullet-proof-gundb')
 
 // This is an example validation function
 function hasValidToken (msg) {
@@ -81,10 +83,16 @@ const gun = Gun({
   isValidGet: hasValidToken
 })
 
+### bullet-proof
+
+Bullet-proof-gundb is heavier but has other options.
+
+
 
 ```
 ## Related
 
+- [bullet-catcher](https://github.com/zrrrzzt/bullet-catcher)
 - [gun-restrict-examples](https://github.com/zrrrzzt/gun-restrict-examples)
 
 ## License
