@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/zrrrzzt/bullet-catcher#readme",
   "engines": {
-    "node": ">=8.15.1"
+    "node": ">=8.16.0"
   },
   "devDependencies": {
     "ava": "1.4.1",
