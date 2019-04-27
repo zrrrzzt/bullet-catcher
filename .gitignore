@@ -66,5 +66,4 @@ typings/
 .env
 
 # Local
-package-lock.json
 ossl
